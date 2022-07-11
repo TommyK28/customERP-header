@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="active">
+    <header class="header">
+            <div class="header__container">
+                <div class="header__brand">
+                    <a href="#"><img src="https://vesmirnekure.cz/img/VesmirneKure-Samotne-Kure-SvetlePozadi.svg" alt="logo">Vesmírné<br>kuře</a>
+                </div>
+    
+                <button class="header__nav-toggle">
+                    <span></span>
+                </button>
+    
+                <div class="header__search">
+                    <form action="" role="search" autocomplete="off" class="form_bar__form">
+                        <input type="text" placeholder="Your search">
+    
+                        <button class="header__search__btn--search" type="submit">Search</button>
+                    </form>
+    
+                    <button type="button" class="btn header__search__btn--close">
+                        <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.2 22.2">
+                            <path d="m12.9 11.1 9.3 9.3-1.8 1.8-9.3-9.3-9.3 9.3L0 20.4l9.3-9.3L0 1.8 1.8 0l9.3 9.3L20.4 0l1.8 1.8Z" fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+    
+                <button class="icon-search">			
+                    <svg class="icon" aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 9C3.75 6.1005 6.1005 3.75 9 3.75C11.8995 3.75 14.25 6.1005 14.25 9C14.25 11.8995 11.8995 14.25 9 14.25C6.1005 14.25 3.75 11.8995 3.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C10.5938 15.75 12.0585 15.1976 13.2133 14.2739L16.7192 17.7799C17.0121 18.0728 17.487 18.0728 17.7799 17.7799C18.0728 17.487 18.0728 17.0121 17.7799 16.7192L14.2739 13.2133C15.1976 12.0585 15.75 10.5938 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25Z" fill="currentColor"/>
+                    </svg>
+    
+                </button>
+    
+                <div class="header__notifications">
+                    <button class="icon-bell">
+                        <svg class="icon" aria-hidden="true" focusable="false" width="22" height="22"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M256 32v17.88C328.5 61.39 384 124.2 384 200v33.4c0 45.4 15.5 89.5 43.8 125l14.9 18.6c5.8 7.2 6.9 17.1 2.9 25.4-4 8.3-12.4 13.6-21.6 13.6H24c-9.23 0-17.635-5.3-21.631-13.6A24.019 24.019 0 0 1 5.26 377l14.91-18.6C48.54 322.9 64 278.8 64 233.4V200c0-75.8 55.5-138.61 128-150.12V32c0-17.67 14.3-32 32-32s32 14.33 32 32zm-40 64c-57.4 0-104 46.6-104 104v33.4c0 47.9-13.88 94.6-39.69 134.6H375.7c-25.8-40-39.7-86.7-39.7-134.6V200c0-57.4-46.6-104-104-104h-16zm72 352c0 16.1-6.7 33.3-18.7 45.3S240.1 512 224 512c-17 0-33.3-6.7-45.3-18.7S160 464.1 160 448h128z" />
+                        </svg>
+                    </button>
+    
+                    <div class="header__notifications-box">
+                        <p class="header__notifications-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, rem.
+                        </p>
+                        <span class="header__notifications-info">
+                            1 day ago
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="header__user">
+                    <div class="header__user__btn">
+                        <!--<img src="./images/user-profile.svg" alt="user">-->
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 39.9998C31.0155 39.9998 40 31.0155 40 20C40 8.9843 31.0157 0 20 0C8.9843 0 0 8.9843 0 19.9999C0 31.0154 8.9843 39.9998 20 39.9998Z" fill="#FFD240"/>
+                            <path d="M25.5159 30.0348V25.9316H14.9648V30.0348L20.2404 34.7242L25.5159 30.0348Z" fill="#FFD7A3"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.1493 33.0339C31.4767 37.295 26.0441 39.9997 20.0001 39.9997C14.1234 39.9997 8.82488 37.4428 5.16015 33.3845C5.43431 32.6822 6.03928 32.135 6.80779 31.9542L14.0612 30.2475C14.2673 30.199 14.4487 30.0967 14.5949 29.9591L20.2406 33.5519L26.1155 30.1249C26.2098 30.1779 26.3105 30.2217 26.4201 30.2474L33.6735 31.9541C34.3086 32.1035 34.832 32.5032 35.1493 33.0339Z" fill="#8B63E7"/>
+                            <path d="M14.9648 25.9316V30.2608C21.6106 32.6552 25.5159 26.6626 25.5159 26.6626V25.9315H14.9648V25.9316Z" fill="#F0C290"/>
+                            <path d="M12.6201 12.4497L13.1309 23.6874C13.1786 24.7372 13.6934 25.7108 14.5341 26.3413L16.9577 28.1591C17.5665 28.6156 18.307 28.8625 19.068 28.8625H21.4127C22.1737 28.8625 22.9141 28.6157 23.5229 28.1591L25.9466 26.3413C26.7873 25.7107 27.3021 24.7373 27.3498 23.6874L27.8606 12.4497C27.8605 12.4497 12.6201 12.4497 12.6201 12.4497Z" fill="#FFE1B2"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9696 39.9997H20.0311C20.5936 39.9989 21.1507 39.9746 21.7016 39.9278L21.3403 34.7241H19.1421L18.7783 39.9627C19.1725 39.9867 19.5697 39.9991 19.9696 39.9997Z" fill="#5B5D6E"/>
+                            <path d="M21.7063 33.5518H18.7754V34.655C18.7754 35.0169 19.0688 35.3103 19.4307 35.3103H21.0509C21.4128 35.3103 21.7062 35.0169 21.7062 34.655V33.5518H21.7063Z" fill="#515262"/>
+                            <path d="M14.8832 28.7297L20.2411 33.5518C20.2411 33.5518 18.7406 34.3093 16.8889 35.836C16.5069 36.1509 15.9291 36.0233 15.7243 35.5726L13.207 30.0348L14.0034 28.8404C14.2015 28.5429 14.6175 28.4907 14.8832 28.7297Z" fill="white"/>
+                            <path d="M25.5991 28.7297L20.2412 33.5518C20.2412 33.5518 21.7417 34.3093 23.5934 35.836C23.9753 36.1509 24.5531 36.0233 24.758 35.5726L27.2752 30.0348L26.4789 28.8404C26.2807 28.5429 25.8647 28.4907 25.5991 28.7297Z" fill="white"/>
+                            <path d="M23.7939 8.56631L24.3435 12.4497C26.8519 12.9514 27.2134 16.8881 27.2655 18.0125C27.2749 18.2165 27.3401 18.4135 27.4508 18.5852L28.4079 20.0699C28.4079 20.0699 28.0803 17.6153 29.5802 15.9667C29.5803 15.9667 30.0953 6.22159 23.7939 8.56631Z" fill="#4E1E30"/>
+                            <path d="M28.9963 19.82L28.3346 22.467C28.2561 22.7808 27.9743 23.0008 27.6509 23.0008C27.2954 23.0008 26.9956 22.7361 26.9515 22.3835L26.6131 19.6761C26.5225 18.9514 27.0875 18.3114 27.8178 18.3114H27.8183C28.6083 18.3115 29.1879 19.0537 28.9963 19.82Z" fill="#FFE1B2"/>
+                            <path d="M13.1822 7.51605L14.0492 8.10832C10.1292 11.0025 10.8619 15.9667 10.8619 15.9667C12.0342 17.139 12.0342 20.0699 12.0342 20.0699L13.2065 18.8976C13.2065 18.8976 12.7541 15.511 14.965 14.2082C17.0166 12.9992 18.8118 13.6221 20.6436 13.6221C25.5527 13.6221 26.9266 11.7719 26.6885 9.51885C26.5652 8.35303 24.7828 5.92457 20.2406 6.0018C18.4075 6.03294 14.9651 6.58796 13.1822 7.51605Z" fill="#66273F"/>
+                            <path d="M12.8402 13.1091C12.8402 13.1091 12.2174 10.6545 14.0492 8.1084C10.1292 11.0026 10.8619 15.9668 10.8619 15.9668C12.0342 17.1391 12.0342 20.07 12.0342 20.07L13.2065 18.8977C13.2065 18.8977 12.7541 15.5111 14.965 14.2083C17.0166 12.9993 18.8118 13.6221 20.6436 13.6221C21.442 13.6221 22.1377 13.5687 22.7574 13.477C18.9768 13.6037 16.7481 10.74 12.8402 13.1091Z" fill="#4E1E30"/>
+                            <path d="M11.4851 19.82L12.1468 22.467C12.2253 22.7808 12.5071 23.0008 12.8305 23.0008C13.186 23.0008 13.4858 22.7361 13.5299 22.3835L13.8683 19.6761C13.9589 18.9514 13.3939 18.3114 12.6636 18.3114H12.6631C11.8731 18.3115 11.2935 19.0537 11.4851 19.82Z" fill="#FFE1B2"/>
+                        </svg>
+                        <span class="header__user-name">Logged user</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <aside class="aside">
+            <nav class="aside__menu active">
+                <button type="button" class="btn aside__menu__btn--close">
+                    <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.2 22.2">
+                        <path
+                            d="m12.9 11.1 9.3 9.3-1.8 1.8-9.3-9.3-9.3 9.3L0 20.4l9.3-9.3L0 1.8 1.8 0l9.3 9.3L20.4 0l1.8 1.8Z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+    
+                <div class="aside__brand">
+                    <a href="#"><img src="https://vesmirnekure.cz/img/VesmirneKure-Samotne-Kure-SvetlePozadi.svg" alt="logo">Vesmírné<br>kuře</a>
+                </div>
+    
+                <ul>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Products</a>
+    
+                        <ul class="sub-menu">
+                            <li><a href="#">E-books</a></li>
+                            <li><a href="#">E-books</a></li>
+                            <li><a href="#">E-books</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Customers</a>
+                    </li>
+                    <li>
+                        <a href="#">Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#">Ticket</a>
+                    </li>
+                    <li>
+                        <a href="#">Project</a>
+                    </li>
+                    <li>
+                        <a href="#">Notes</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign out</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <script src="script.js"></script>
+    </body>
+</html>
